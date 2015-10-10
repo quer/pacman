@@ -1,0 +1,210 @@
+body {
+    font-family: arial;
+	background-color: black;
+}
+#map_maker{
+    width: 480px;
+    height: 480px;
+}
+.hero {
+    background: url("pacman.png");
+
+}
+.ghost1 {
+    background: url("Ghost1.GIF");
+    background-size: 32px 32px;
+}
+.ghost2 {
+    background: url("Ghost2.GIF");
+    background-size: 32px 32px;
+}
+.ghost3 {
+    background: url("Ghost3.GIF");
+    background-size: 32px 32px;
+}
+.ghost4 {
+    background: url("Ghost4.GIF");
+    background-size: 32px 32px;
+}
+.tiles {
+    width: 32px;
+    height: 32px;
+    float: left;
+    background-color: black;
+}
+/* op og ned og til siden*/
+.tiles-top {
+    background: url("tiles2.png") -192px 0px;
+}
+.tiles-top-center {
+    background: url("tiles2.png") -192px -32px;
+}
+.tiles-bottom {
+    background: url("tiles2.png") -192px -64px;
+}
+.tiles-left {
+    background: url("tiles2.png") -224px 0px;
+}
+.tiles-right-center {
+    background: url("tiles2.png") -256px 0px;
+}
+.tiles-right {
+    background: url("tiles2.png") -288px 0px;
+}
+.tiles-center {
+    background: url("tiles2.png") -224px -32px;
+}
+/* point */
+.tiles-point {
+    background: url("tiles2.png") -288px -64px;
+}
+.tiles-eat {
+    background: url("tiles2.png") -224px -64px;
+}
+/* type 1 -- den midderst! med inder og ydre border*/
+.tiles-type-1-bottom-right {
+    background: url("tiles2.png") -96px 0px;
+}
+.tiles-type-1-bottom-left {
+    background: url("tiles2.png") -160px 0px;
+}
+.tiles-type-1-top-right {
+    background: url("tiles2.png") -96px -64px;
+}
+.tiles-type-1-top-left {
+    background: url("tiles2.png") -160px -64px;
+}
+.tiles-type-1-center-right {
+    background: url("tiles2.png") -96px -32px;
+}
+.tiles-type-1-center-down {
+    background: url("tiles2.png") -128px -0px;
+}
+.tiles-type-1-center-left {
+    background: url("tiles2.png") -160px -32px;
+}
+.tiles-type-1-center-up {
+    background: url("tiles2.png") -128px -64px;
+}
+.tiles-type-1-center-center {
+    background: url("tiles2.png") -128px -32px;
+}
+/* type 2 -- den yderst til hÃ¸jer! uden inder border*/
+.tiles-type-2-bottom-right {
+    background: url("tiles2.png") -0px 0px;
+}
+.tiles-type-2-bottom-left {
+    background: url("tiles2.png") -64px 0px;
+}
+.tiles-type-2-top-right {
+    background: url("tiles2.png") -0px -64px;
+}
+.tiles-type-2-top-left {
+    background: url("tiles2.png") -64px -64px;
+}
+.tiles-type-2-center-right {
+    background: url("tiles2.png") -0px -32px;
+}
+.tiles-type-2-center-down {
+    background: url("tiles2.png") -32px -0px;
+}
+.tiles-type-2-center-left {
+    background: url("tiles2.png") -64px -32px;
+}
+.tiles-type-2-center-up {
+    background: url("tiles2.png") -32px -64px;
+}
+.tiles-type-2-center-center {
+    background: url("tiles2.png") -32px -32px;
+}
+/* type 3 -- den yderst til højer! anden linje. special*/
+.tiles-type-3-bottom-right {
+    background: url("tiles2.png") -0px -96px;
+}
+.tiles-type-3-bottom-left {
+    background: url("tiles2.png") -64px -96px;
+}
+.tiles-type-3-top-right {
+    background: url("tiles2.png") -0px -160px;
+}
+.tiles-type-3-top-left {
+    background: url("tiles2.png") -64px -160px;
+}
+.tiles-type-3-center-right {
+    background: url("tiles2.png") -0px -128px;
+}
+.tiles-type-3-center-down {
+    background: url("tiles2.png") -32px -96px;
+}
+.tiles-type-3-center-left {
+    background: url("tiles2.png") -64px -128px;
+}
+.tiles-type-3-center-up {
+    background: url("tiles2.png") -32px -160px;
+}
+.tiles-type-3-center-center {
+    background: url("tiles2.png") -32px -128px;
+}
+/* type 4 -- den midderst! anden linje. special*/
+.tiles-type-4-bottom-right {
+    background: url("tiles2.png") -96px -96px;
+}
+.tiles-type-4-bottom-left {
+    background: url("tiles2.png") -160px -96px;
+}
+.tiles-type-4-top-right {
+    background: url("tiles2.png") -96px -160px;
+}
+.tiles-type-4-top-left {
+    background: url("tiles2.png") -160px -160px;
+}
+.tiles-type-4-center-right {
+    background: url("tiles2.png") -96px -128px;
+}
+.tiles-type-4-center-down {
+    background: url("tiles2.png") -128px -96px;
+}
+.tiles-type-4-center-left {
+    background: url("tiles2.png") -160px -128px;
+}
+.tiles-type-4-center-up {
+    background: url("tiles2.png") -128px -160px;
+}
+.tiles-type-4-center-center {
+    background: url("tiles2.png") -128px -128px;
+}
+#menu {
+    width: 340px;
+    height: 206px;
+    position: absolute;
+    top: 9px;
+    left: 500px;
+    border: 1px solid white;
+    padding: 10px;
+}
+#menu div{
+	border: 1px solid white;
+}
+#save{
+	color:white;
+    position: absolute;
+    top: 282px;
+    left: 500px;
+    border: 1px solid white;
+}
+#selected-menu{
+	color:white;
+    position: absolute;
+    top: 240px;
+    left: 500px;
+    border: 1px solid white;
+}
+#output{
+	color:white;
+    position: absolute;
+    top: 310px;
+    left: 500px;
+    border: 1px solid white;
+	padding: 10px;
+	width: 320px;
+}
